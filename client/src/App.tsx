@@ -1,11 +1,11 @@
 import React from 'react';
-import { CreateRecipe } from './components/pages/CreateRecipe';
+import { InventoryHome } from './components/inventory/InventoryHome';
 
 
 function App() {
   return (
     <div>
-      <CreateRecipe/>
+      <InventoryHome/>
     </div>
   );
 }
