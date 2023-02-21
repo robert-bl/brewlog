@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { CreateInventoryItem } from "./CreateInventoryItem"
+import { ShowInventoryItem } from "./ShowInventoryItem"
 import { InventoryItem, baseInventory } from "../../resources/baseInventory"
 
 
@@ -16,7 +17,9 @@ export const InventoryHome = () => {
         <div>
             <div>
                 {inventory.map((item, i) => (
-                    <div key={i}>{item.itemName}</div>
+                    <div key={i}>
+                        <ShowInventoryItem itemInfo={item}/>
+                    </div>
                 ))}
             </div>
         </div>
